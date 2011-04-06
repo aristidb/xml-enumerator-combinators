@@ -1,4 +1,9 @@
 module Text.XML.Enumerator.Combinators.General
+(
+  chooseSplit
+, permute
+, permuteFallback
+)
 where
   
 import Control.Monad (liftM)

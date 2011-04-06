@@ -1,4 +1,15 @@
 module Text.XML.Enumerator.Combinators.Tags
+(
+  tags
+, tagsPermute
+, Repetition(..)
+, repeatNever
+, repeatOnce
+, repeatOptional
+, repeatMany
+, repeatSome
+, tagsPermuteRepetition
+)
 where
 
 import           Control.Applicative       ((<$>))
