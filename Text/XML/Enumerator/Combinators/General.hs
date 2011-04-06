@@ -25,7 +25,7 @@ permute f is = do
 
 -- | Permute all parsers until none return 'Just', but always test some fallback parsers.
 permuteFallback :: (Monad m) => m (Maybe [b]) -> (a -> m (Maybe b)) -> [a] -> m (Maybe [b])
-permuteFallback fb _ [] = return (Just [])
+permuteFallback _  _ [] = return (Just [])
 permuteFallback fb f is = do
     x <- chooseSplit f is
     case x of

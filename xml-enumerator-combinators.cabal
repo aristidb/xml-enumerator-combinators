@@ -45,10 +45,17 @@ Cabal-version:       >=1.2
 
 Library
   -- Modules exported by the library.
-  Exposed-modules:     Text.XML.Enumerator.Combinators.General
+  Exposed-modules:     Text.XML.Enumerator.Combinators.General,
+                       Text.XML.Enumerator.Combinators.Tags
   
   -- Packages needed in order to build this package.
-  Build-depends:       base >=4.2 && <5
+  Build-depends:       base >=4.2 && <5,
+                       containers >=0.3 && <0.5,
+                       enumerator >=0.4.9 && <0.5,
+                       xml-types >=0.3 && <0.4,
+                       xml-enumerator >=0.3.0
+
+  GHC-Options:         -Wall
   
   -- Modules not exported by this package.
   -- Other-modules:       
