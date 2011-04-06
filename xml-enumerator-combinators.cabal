@@ -13,7 +13,8 @@ Version:             0.1
 Synopsis:            Parser combinators for xml-enumerator and compatible XML parsers.
 
 -- A longer description of the package.
--- Description:         
+Description:         Parser combinators for xml-enumerator and compatible XML parsers. The aim is to provide advanced parser combinators to eliminate
+                     tiresome repetition of boilerplate in streaming XML parsers.
 
 -- The license under which the package is released.
 License:             BSD3
